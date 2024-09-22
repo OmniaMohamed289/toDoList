@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 30px auto;
+    background-color: #f6f6f6;
+}
+
+.container .addtask {
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+
+.container .addtask input {
+    display: inline-block; 
+    background-color: #40b8ac;
+    border: none;
+    padding: 10px 15px;
+    width: calc(100% - 15px);
+    color: #f6f6f6;
+    font-size: 15px;
+}
+
+.container .addtask input:focus {
+    outline: none;
+}
+
+.container .addtask .plus {
+    position: absolute;
+    font-size: 38px;
+    color: #009688;
+    background-color: #f6f6f6;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    right: 12px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.container .addtask .plus:hover {
+    transform: rotate(90deg);
+}
+
+.task-content {
+    padding: 15px;
+}
+
+.task-content .no-tasks-message {
+    color: rgb(166, 166, 166);
+    font-size: 18px;  
+}
+
+.task-content > span {
+    background-color: white;
+    padding: 10px 15px;
+    width: 100%;
+    display: block;
+}
+
+.task-content > span:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.task-content .taskbox {
+    font-size: 19px;
+}
+
+.task-content .delete {
+    color: #f6f6f6;
+    background-color: #e91e63;
+    padding: 5px 10px;
+    float: right;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.task-stats {
+    width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.task-stats .tasks-count, .task-stats .tasks-completed {
+    float: left;
+    padding: 10px;
+    width: 50%;
+}
+
+.task-stats .tasks-count span, .task-stats .tasks-completed span {
+    color: #f6f6f6;
+    background-color: #e91e63;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.task-stats .tasks-completed {
+    float: right;
+    text-align: right;
+}
+
+.task-stats .tasks-completed span {
+    background-color: #009688;
+}
+#delall {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+}
+
+#delall:hover {
+    background-color: #d81b60;
+}
+
